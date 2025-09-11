@@ -33,6 +33,6 @@ fun readFromFile(filename: String): String {
 
 
 fun main(){
-    readNumber(BufferedReader("s"))
+    //readNumber(BufferedReader("s"))
 
 }
