@@ -1,4 +1,8 @@
 package com.bible.ch03.examples
+/**
+ * 3.6.1 Local Functions: 코드 중복 제거
+ * 함수 안에서 함수를 정의하여 중복을 제거
+ */
 
 class User(val id: Int, val name: String, val address: String)
 
@@ -43,33 +47,3 @@ fun main() {
         println("Error: ${e.message}")
     }
 }
-
-// 최종 해결책: Extension + Local function 조합
-//fun User.validateBeforeSave() {
-//    fun validate(value: String, fieldName: String) {
-//        if (value.isEmpty()) {
-//            throw IllegalArgumentException(
-//                "Can't save user $id: empty $fieldName"  // this.id 생략 가능
-//            )
-//        }
-//    }
-//
-//    validate(name, "Name")      // this.name 생략 가능
-//    validate(address, "Address") // this.address 생략 가능
-//}
-//
-//fun saveUser(user: User) {
-//    user.validateBeforeSave()
-//    // 데이터베이스에 저장
-//    println("Saving user: ${user.name}")
-//}
-//
-//fun main() {
-//    val user = User(1, "Alice", "123 Main St")
-//
-//    try {
-//        saveUser(user)
-//    } catch (e: IllegalArgumentException) {
-//        println("Validation failed: ${e.message}")
-//    }
-//}

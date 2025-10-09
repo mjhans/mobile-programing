@@ -1,5 +1,9 @@
 package com.bible.ch02.examples
 
+import com.bible.ch03.examples.MyJoinToString
+
+//import com.bible.ch03.examples.MyJoinToString
+
 fun main() {
     val binaryReps = mutableMapOf<Char, String>()
     //binaryReps = mapOf<Char, String>()
@@ -18,4 +22,5 @@ fun main() {
     for ((index, element) in list.withIndex()) {
         println("withIndex = $index: $element")
     }
+    //list.MyJoinToString()
 }
