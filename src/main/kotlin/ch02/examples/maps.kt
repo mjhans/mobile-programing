@@ -6,7 +6,7 @@ import com.bible.ch03.examples.MyJoinToString
 
 fun main() {
     val binaryReps = mutableMapOf<Char, String>()
-    //binaryReps = mapOf<Char, String>()
+    //val binaryReps = mapOf<Char, String>()
 
     for (c in 'A'..'F') {
         val binary = Integer.toBinaryString(c.code.toInt())
@@ -22,5 +22,5 @@ fun main() {
     for ((index, element) in list.withIndex()) {
         println("withIndex = $index: $element")
     }
-    //list.MyJoinToString()
+    println(list.MyJoinToString())
 }

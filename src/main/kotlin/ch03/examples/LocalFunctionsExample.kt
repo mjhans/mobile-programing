@@ -37,7 +37,7 @@ fun saveUser_improved(user: User) {
 
 fun main() {
     val user1 = User(1, "Alice", "123 Main St")
-    val user2 = User(2, "", "456 Oak Ave")  // 빈 이름
+    val user2 = User(2, "bob", "456 Oak Ave")  // 빈 이름
 
     saveUser_improved(user1)  // 성공
 

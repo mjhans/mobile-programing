@@ -29,11 +29,15 @@ fun main() {
     // Destructuring declaration
     val (number, name) = 1 to "one"
     println("number: $number, name: $name")
+    val args = arrayOf("a", "b", "c", "d", "e", "f", "g")
+    // 배열 구조 분해 (destructuring) - spread 연산자 불필요
+    val (a, b, c, d) = args
+    println("a : $a, b : $b, c : $c, d : $d")
 
     // for 루프에서 destructuring
-    for ((index, element) in listOf("a", "b", "c").withIndex()) {
+    for ((index, element) in listOf("a", "b", "c", "d", "h").withIndex()) {
         println("$index: $element")
     }
 
-    println("2 pow 4 : ${2.pow(4)}")
+    println("2 pow 5 : ${2 pow 5}")
 }
