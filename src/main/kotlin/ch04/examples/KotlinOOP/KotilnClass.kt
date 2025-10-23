@@ -34,6 +34,11 @@ class Student(
         require(age >= 0) { "Age cannot be negative" }
         println("Student 객체 생성: $name (ID: $id)")
     }
+    val current = System.currentTimeMillis()
+
+    init{
+        println("created time : $current")
+    }
 
     // 추가 메서드
     fun printInfo() {
@@ -130,7 +135,7 @@ fun main() {
     println("나이: ${person.age}")
 
     // val은 read-only
-    // person.name = "이영희"  // 컴파일 에러!
+    //person.name = "이영희"  // 컴파일 에러!
 
     // var는 mutable
     person.age = 31
