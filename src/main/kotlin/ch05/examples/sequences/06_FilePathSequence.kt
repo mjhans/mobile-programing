@@ -53,11 +53,11 @@ fun main() {
 
     // 4. 정리
     println("4. 정리:")
-    hiddenFile.delete()
-    normalFile.delete()
-    hiddenDir.delete()
-    normalDir.delete()
-    tempDir.delete()
+//    hiddenFile.delete()
+//    normalFile.delete()
+//    hiddenDir.delete()
+//    normalDir.delete()
+//    tempDir.delete()
     println("테스트 파일 및 디렉토리 삭제 완료\n")
 
     println("핵심:")
